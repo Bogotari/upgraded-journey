@@ -85,16 +85,42 @@ section h3 {
   font-weight: bold;
 }
 
+/* Added styling for participant info */
 .activity-card ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 10px;
 }
 
 .activity-card ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.activity-card ul li:last-child {
+  border-bottom: none;
+}
+
+.activity-card ul li span {
   font-size: 14px;
+  color: #333;
+}
+
+.activity-card ul li .delete-btn {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.activity-card ul li .delete-btn:hover {
+  color: darkred;
 }
 
 .delete-btn {
